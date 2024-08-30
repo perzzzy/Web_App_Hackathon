@@ -1,6 +1,6 @@
 # **THERMOSECURITY by Housecom - Hackathon**
 
-![Main logo](assets/images/Main_Logo_Colour.png "Main logo")
+![Main logo](assets/images/main_logo_colour.png "Main logo")
 
 Welcome to **THERMOSECURITY**! This project was developed during the Housecom Hackathon and is a remake of a school assignment. The goal was to create an interactive application that offers an engaging user experience through the use of 3D and still images. This project is designed as a mobile-first, one-page web application.
 
