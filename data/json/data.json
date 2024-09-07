@@ -1,0 +1,11 @@
+{
+    "product_image_1": {
+        "photo": "red_thermostat.jpg"
+    },
+    "product_image_2": {
+        "photo": "white_thermostat.jpg"
+    },
+    "product_image_3": {
+        "photo": "black_thermostat.jpg"
+    }
+}
