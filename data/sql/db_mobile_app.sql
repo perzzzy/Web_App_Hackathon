@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Sep 07, 2024 at 05:36 AM
+-- Generation Time: Sep 07, 2024 at 10:12 PM
 -- Server version: 5.7.24
 -- PHP Version: 8.3.1
 
@@ -206,14 +206,14 @@ CREATE TABLE `tbl_users` (
 --
 ALTER TABLE `tbl_addresses`
   ADD PRIMARY KEY (`address_id`),
-  ADD UNIQUE KEY `user_id` (`user_id`);
+  ADD KEY `user_id` (`user_id`);
 
 --
 -- Indexes for table `tbl_cart`
 --
 ALTER TABLE `tbl_cart`
   ADD PRIMARY KEY (`cart_id`),
-  ADD UNIQUE KEY `user_id` (`user_id`);
+  ADD KEY `user_id` (`user_id`);
 
 --
 -- Indexes for table `tbl_cart_items`
@@ -233,21 +233,22 @@ ALTER TABLE `tbl_categories`
 -- Indexes for table `tbl_coupons`
 --
 ALTER TABLE `tbl_coupons`
-  ADD PRIMARY KEY (`coupon_id`);
+  ADD PRIMARY KEY (`coupon_id`),
+  ADD KEY `coupon_code` (`coupon_code`);
 
 --
 -- Indexes for table `tbl_notifications`
 --
 ALTER TABLE `tbl_notifications`
   ADD PRIMARY KEY (`notification_id`),
-  ADD UNIQUE KEY `user_id` (`user_id`);
+  ADD KEY `user_id` (`user_id`);
 
 --
 -- Indexes for table `tbl_orders`
 --
 ALTER TABLE `tbl_orders`
   ADD PRIMARY KEY (`order_id`),
-  ADD UNIQUE KEY `user_id` (`user_id`);
+  ADD KEY `user_id` (`user_id`);
 
 --
 -- Indexes for table `tbl_order_items`
@@ -262,15 +263,14 @@ ALTER TABLE `tbl_order_items`
 --
 ALTER TABLE `tbl_products`
   ADD PRIMARY KEY (`product_id`),
-  ADD UNIQUE KEY `category_id` (`category_id`),
-  ADD UNIQUE KEY `category_id_2` (`category_id`);
+  ADD KEY `category_id` (`category_id`);
 
 --
 -- Indexes for table `tbl_product_images`
 --
 ALTER TABLE `tbl_product_images`
   ADD PRIMARY KEY (`product_image_id`),
-  ADD UNIQUE KEY `product_id` (`product_id`);
+  ADD KEY `product_id` (`product_id`);
 
 --
 -- Indexes for table `tbl_reviews`
@@ -377,19 +377,14 @@ ALTER TABLE `tbl_addresses`
 -- Constraints for table `tbl_cart`
 --
 ALTER TABLE `tbl_cart`
-  ADD CONSTRAINT `tbl_cart_ibfk_1` FOREIGN KEY (`cart_id`) REFERENCES `tbl_cart_items` (`cart_id`);
+  ADD CONSTRAINT `tbl_cart_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `tbl_users` (`user_id`);
 
 --
 -- Constraints for table `tbl_cart_items`
 --
 ALTER TABLE `tbl_cart_items`
-  ADD CONSTRAINT `tbl_cart_items_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `tbl_products` (`product_id`);
-
---
--- Constraints for table `tbl_categories`
---
-ALTER TABLE `tbl_categories`
-  ADD CONSTRAINT `tbl_categories_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `tbl_products` (`category_id`);
+  ADD CONSTRAINT `tbl_cart_items_ibfk_1` FOREIGN KEY (`cart_id`) REFERENCES `tbl_cart` (`cart_id`),
+  ADD CONSTRAINT `tbl_cart_items_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `tbl_products` (`product_id`);
 
 --
 -- Constraints for table `tbl_notifications`
@@ -401,7 +396,7 @@ ALTER TABLE `tbl_notifications`
 -- Constraints for table `tbl_orders`
 --
 ALTER TABLE `tbl_orders`
-  ADD CONSTRAINT `tbl_orders_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `tbl_users` (`user_id`);
+  ADD CONSTRAINT `tbl_orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `tbl_users` (`user_id`);
 
 --
 -- Constraints for table `tbl_order_items`
@@ -409,6 +404,12 @@ ALTER TABLE `tbl_orders`
 ALTER TABLE `tbl_order_items`
   ADD CONSTRAINT `tbl_order_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `tbl_orders` (`order_id`),
   ADD CONSTRAINT `tbl_order_items_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `tbl_products` (`product_id`);
+
+--
+-- Constraints for table `tbl_products`
+--
+ALTER TABLE `tbl_products`
+  ADD CONSTRAINT `tbl_products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `tbl_categories` (`category_id`);
 
 --
 -- Constraints for table `tbl_product_images`
@@ -422,12 +423,6 @@ ALTER TABLE `tbl_product_images`
 ALTER TABLE `tbl_reviews`
   ADD CONSTRAINT `tbl_reviews_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `tbl_products` (`product_id`),
   ADD CONSTRAINT `tbl_reviews_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `tbl_users` (`user_id`);
-
---
--- Constraints for table `tbl_users`
---
-ALTER TABLE `tbl_users`
-  ADD CONSTRAINT `tbl_users_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `tbl_cart` (`user_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
