@@ -4,11 +4,382 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="THERMOSECURITY by Housecom offers smart home solutions with seamless integration, energy efficiency, and full control.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="assets/images/main_logo_white.png" type="image/x-icon">
         <link rel="stylesheet" href="css/main.css">
-        <title>THERMOSECURITY by Housecom</title>
+        <title>THERMOSECURITY by HOUSCOM</title>
     </head>
 
     <body>
+        <header class="header">
+            <h1 class="visually-hidden">THERMOSECURITY by HOUSCOM</h1>
+            <div class="nav-bar">
+                <div class="menu">
+                    <button class="menu-button" type="button" aria-label="Open Menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <nav class="main-navigation" aria-label="Main Navigation">
+                        <h2 class="visually-hidden">Main Navigation</h2>
+                        <ul class="menu-links">
+                            <li class="login">
+                                <a href="#login">
+                                    <p class="profile-text">Login</p>
+                                    <img src="assets/images/profilepic.png" alt="Profile Avatar" class="profile-avatar">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="#features">Features</a>
+                            </li>
+                            <li>
+                                <a href="#reviews">Reviews</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/main_logo_white.png" alt="THERMOSECURITY by HOUSCOM logo">
+                    </a>
+                </div>
+                <div class="search-container">
+                    <button class="search-button" type="button" aria-label="Search">
+                        <img src="assets/images/search.svg" alt="Search icon">
+                    </button>
+                    <div class="search-wrapper">
+                        <input type="search" name="search" id="search" aria-label="Search" placeholder="Search...">
+                    </div>
+                </div>
+                <div class="notifications">
+                    <button class="notifications-button" aria-label="View Notifications">
+                        <img src="assets/images/notifications.svg" alt="Notification icon">
+                        <span class="notification-items">0</span>
+                    </button>
+                </div>
+                <div class="cart">
+                    <button class="cart-button" aria-label="View Cart">
+                        <img src="assets/images/shopping_bag_icon.svg" alt="Shopping bag icon">
+                        <span class="cart-items">0</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="hero">
+                <h2 class="visually-hidden">Hero Images Section</h2>
+                <picture>
+                    <source srcset="assets/images/hero_image_desktop.jpg" media="(min-width: 700px)">
+                    <img src="assets/images/hero_image_mobile.jpg"
+                        alt="Hero background image featuring featured text and product samples">
+                </picture>
+            </section>
+            <section class="product-info">
+                <h2 class="visually-hidden">Product Information</h2>
+                <div class="product-desc">
+                    <p>If you're looking for a new thermostat, you've come to the right place. Our selection of
+                        thermostats includes options for various home types and budgets. Whether you're looking for a
+                        basic model or a top-of-the-line, energy-saving option, we've got you covered. With this
+                        thermostat, you can control the temperature of any room in your home wherever you go. We
+                        currently have three colors available, which you can see down below. The THERMOSTAT by HOUSCOM
+                        is a product worth trying.</p>
+                </div>
+                <div class="product-samples">
+                    <img src="assets/images/mobile_app.jpg" alt="THERMOSECURITY by HOUSCOM mobile app">
+                    <img src="assets/images/watch_app.jpg" alt="THERMOSECURITY by HOUSCOM watch app">
+                    <img src="assets/images/wall_device.jpg" alt="THERMOSECURITY by HOUSCOM thermostat">
+                </div>
+            </section>
+            <section class="features" id="features">
+                <h2 class="visually-hidden">Product Features</h2>
+                <div class="features-container">
+                    <h3>Features</h3>
+                    <div class="smart-connectivity-feature">
+                        <img src="assets/images/smart_connectivity_icon.svg" alt="Smart Connectivity icon">
+                        <h4>Home Automation Integration</h4>
+                        <p>Seamless integration with smart home systems and automation platforms.</p>
+                    </div>
+                    <hr class="feature-divider">
+                    <div class="eco-mode-feature">
+                        <img src="assets/images/eco_mode_icon.svg" alt="Eco Mode icon">
+                        <h4>Smart Away Mode</h4>
+                        <p>Detects when you are away from home and adjusts settings to save energy.</p>
+                    </div>
+                    <hr class="feature-divider">
+                    <div class="temperature-sensor-feature">
+                        <img src="assets/images/temperature_sensor_icon.svg" alt="Temperature Sensor icon">
+                        <h4>Temperature Sensors</h4>
+                        <p>Monitor different areas of the home for more accurate temperature control.</p>
+                    </div>
+                    <hr class="feature-divider">
+                    <div class="mobile-app-control-feature">
+                        <img src="assets/images/mobile_app_control_icon.svg" alt="Mobile App Control icon">
+                        <h4>Mobile App Control</h4>
+                        <p>Offers full control and customization via a smartphone app.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="thermostat-categories">
+                <h2 class="visually-hidden">Product Categories</h2>
+                <div class="categories-container">
+                    <div class="category-item">
+                        <button class="category-button" type="button" aria-expanded="false">
+                            <span class="category-heading">Smart Thermostats</span>
+                            <img src="assets/images/down_arrow.svg" alt="Arrow down icon">
+                        </button>
+                        <div class="category-links" aria-hidden="true">
+                            <ul>
+                                <li>
+                                    <a href="#">Basic Models</a>
+                                </li>
+                                <li>
+                                    <a href="#">Advanced Models</a>
+                                </li>
+                                <li>
+                                    <a href="#">Energy-Saving Models</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <button class="category-button" type="button" aria-expanded="false">
+                            <span class="category-heading">Smart Home Integration</span>
+                            <img src="assets/images/down_arrow.svg" alt="Arrow down icon">
+                        </button>
+                        <div class="category-links" aria-hidden="true">
+                            <ul>
+                                <li>
+                                    <a href="#">Compatibility</a>
+                                </li>
+                                <li>
+                                    <a href="#">Adapters & Hubs</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <button class="category-button" type="button" aria-expanded="false">
+                            <span class="category-heading">Accessories</span>
+                            <img src="assets/images/down_arrow.svg" alt="Arrow down icon">
+                        </button>
+                        <div class="category-links" aria-hidden="true">
+                            <ul>
+                                <li>
+                                    <a href="#">Temperature Sensors</a>
+                                </li>
+                                <li>
+                                    <a href="#">Remote Controls</a>
+                                </li>
+                                <li>
+                                    <a href="#">Mounting Kits</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <button class="category-button" type="button" aria-expanded="false">
+                            <span class="category-heading">Mobile App Solutions</span>
+                            <img src="assets/images/down_arrow.svg" alt="Arrow down icon">
+                        </button>
+                        <div class="category-links" aria-hidden="true">
+                            <ul>
+                                <li>
+                                    <a href="#">Mobile App Control</a>
+                                </li>
+                                <li>
+                                    <a href="#">Integration with Other Apps</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <button class="category-button" type="button" aria-expanded="false">
+                            <span class="category-heading">Bundles & Packages</span>
+                            <img src="assets/images/down_arrow.svg" alt="Arrow down icon">
+                        </button>
+                        <div class="category-links" aria-hidden="true">
+                            <ul>
+                                <li>
+                                    <a href="#">Starter Kits</a>
+                                </li>
+                                <li>
+                                    <a href="#">Upgrade Packages</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <button class="category-button" type="button" aria-expanded="false">
+                            <span class="category-heading">Seasonal Offers</span>
+                            <img src="assets/images/down_arrow.svg" alt="Arrow down icon">
+                        </button>
+                        <div class="category-links" aria-hidden="true">
+                            <ul>
+                                <li>
+                                    <a href="#">Summer Specials</a>
+                                </li>
+                                <li>
+                                    <a href="#">Winter Specials</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <button class="category-button" type="button" aria-expanded="false">
+                            <span class="category-heading">Replacement Parts</span>
+                            <img src="assets/images/down_arrow.svg" alt="Arrow down icon">
+                        </button>
+                        <div class="category-links" aria-hidden="true">
+                            <ul>
+                                <li>
+                                    <a href="#">Batteries</a>
+                                </li>
+                                <li>
+                                    <a href="#">Covers & Panels</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <button class="category-button" type="button" aria-expanded="false">
+                            <span class="category-heading">Commercial Solutions</span>
+                            <img src="assets/images/down_arrow.svg" alt="Arrow down icon">
+                        </button>
+                        <div class="category-links" aria-hidden="true">
+                            <ul>
+                                <li>
+                                    <a href="#">Office Thermostats</a>
+                                </li>
+                                <li>
+                                    <a href="#">Industrial Thermostats</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <button class="category-button" type="button" aria-expanded="false">
+                            <span class="category-heading">Custom Solutions</span>
+                            <img src="assets/images/down_arrow.svg" alt="Arrow down icon">
+                        </button>
+                        <div class="category-links" aria-hidden="true">
+                            <ul>
+                                <li>
+                                    <a href="#">Tailored Systems</a>
+                                </li>
+                                <li>
+                                    <a href="#">Consultation Services</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="featured-product">
+                <h2 class="visually-hidden">Featured Thermostat</h2>
+                <div class="featured-product-card">
+                    <div class="featured-product-header">
+                        <h3>Purchase a Smart Thermostat Today!</h3>
+                    </div>
+                    <div class="featured-product-subtext">
+                        <p>The product is offered in three unique color selections.</p>
+                    </div>
+                    <div class="featured-product-image">
+                        <img id="product-image" src="assets/images/black_thermostat.jpg"
+                            alt="THERMOSECURITY by HOUSCOM featured thermostat">
+                    </div>
+                    <div class="featured-product-name">
+                        <h4>Smart Thermostat Pro</h4>
+                    </div>
+                    <div class="product-price">
+                        <p>$250.00</p>
+                    </div>
+                    <div class="colour-options">
+                        <span class="black" data-colour="product_image_3"></span>
+                        <span class="red" data-colour="product_image_1"></span>
+                        <span class="white" data-colour="product_image_2"></span>
+                    </div>
+                    <div class="buy-now-cta add-to-cart-cta">
+                        <a href="#">Buy Now</a>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews" id="reviews">
+                <h2 class="visually-hidden">Customer Reviews</h2>
+                <div class="review-container">
+                    <div class="review-header">
+                        <h3>Reviews</h3>
+                    </div>
+                    <hr class="review-divider">
+                    <div class="customer-rating customer-testimonial customer-name">
+                        <p class="rating">*****</p>
+                        <p class="testimonial"> I have been using the thermostat for a few months now and I am extremely
+                            satisfied with its performance. </p>
+                        <p class="name">Sam Mathews</p>
+                    </div>
+                </div>
+            </section>
+            <section class="secondary-promotional-thermostat">
+                <h2 class="visually-hidden">Secondary Promotional Thermostat</h2>
+                <div class="secondary-promotional-thermostat-image">
+                    <img src="assets/images/smart_home_tablet_wall.jpg"
+                        alt="THERMOSECURITY by HOUSCOM home tablet on wall">
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <section class="footer-links">
+                <h2 class="visually-hidden">Footer Links and Copyright</h2>
+                <div class="links">
+                    <ul class="group-1">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#features">Features</a>
+                        </li>
+                        <li>
+                            <a href="#reviews">Reviews</a>
+                        </li>
+                    </ul>
+                    <ul class="group-2">
+                        <li>
+                            <a href="#">Shipping & Returns</a>
+                        </li>
+                        <li>
+                            <a href="#">Store Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Payment Methods</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                    </ul>
+                    <ul class="group-3">
+                        <li>
+                            <a href="https://www.instagram.com/" aria-label="Follow us on Instagram">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/" aria-label="Subscribe on YouTube">YouTube</a>
+                        </li>
+                        <li>
+                            <a href="https://x.com/" aria-label="Follow us on X">X</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p class="copyright-text">&copy;2024 THERMOSECURITY by HOUSCOM</p>
+                </div>
+            </section>
+        </footer>
         <script src="js/main.js" defer></script>
     </body>
 
