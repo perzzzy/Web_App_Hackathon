@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M16 64C16 28.7 44.7 0 80 0L304 0c35.3 0 64 28.7 64 64l0 384c0 35.3-28.7 64-64 64L80 512c-35.3 0-64-28.7-64-64L16 64zM224 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM304 64L80 64l0 320 224 0 0-320z"/></svg>
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_152_46" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+<rect width="80" height="80" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_152_46)">
+<mask id="mask1_152_46" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+<rect width="80" height="80" fill="#AAAAAA"/>
+</mask>
+<g mask="url(#mask1_152_46)">
+</g>
+<path d="M12.5 10C12.5 4.48438 16.9844 0 22.5 0H57.5C63.0156 0 67.5 4.48438 67.5 10V70C67.5 75.5156 63.0156 80 57.5 80H22.5C16.9844 80 12.5 75.5156 12.5 70V10ZM45 70C45 68.6739 44.4732 67.4021 43.5355 66.4645C42.5979 65.5268 41.3261 65 40 65C38.6739 65 37.4021 65.5268 36.4645 66.4645C35.5268 67.4021 35 68.6739 35 70C35 71.3261 35.5268 72.5979 36.4645 73.5355C37.4021 74.4732 38.6739 75 40 75C41.3261 75 42.5979 74.4732 43.5355 73.5355C44.4732 72.5979 45 71.3261 45 70ZM57.5 10H22.5V60H57.5V10Z" fill="black"/>
+</g>
+</svg>

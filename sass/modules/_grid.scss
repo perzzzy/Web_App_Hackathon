@@ -1,0 +1,743 @@
+/* Mobile Grid Start */
+
+@media screen and (max-width: 767px) {
+
+    /* Homepage Start */
+    .header,
+    .main > *,
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    /* Header Start */
+
+    .nav-bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px 24px;
+    }
+
+    .two-items-left {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px 20px;
+    }
+
+    .three-items-right {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .menu-button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .login a {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .search-container,
+    .search-button,
+    .notification,
+    .notifications-button,
+    .cart,
+    .cart-button {
+        display: flex;
+    }
+
+    .notification-items,
+    .cart-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Header End */
+
+    /* Main Start */
+
+    /* Hero Start */
+    .hero picture {
+        display: flex;
+    }
+
+    /* Hero End */
+
+    /* Product Info Start */
+    .product-samples {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* Product Info End */
+
+    /* Features Start */
+    .features-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .smart-connectivity-feature,
+    .eco-mode-feature,
+    .temperature-sensor-feature,
+    .mobile-app-control-feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Features End */
+
+    /* Categories Start */
+    .categories-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .category-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .category-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Categories End */
+
+    /* Featured Product Start */
+
+    .featured-product-card {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .featured-product-image {
+        display: flex;
+    }
+
+    .colour-options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .buy-now-cta.add-to-cart-cta {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px 0;
+    }
+
+    /* Featured Product End */
+
+    /* Reviews Start */
+
+    .review-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Reviews End */
+
+    /* Secondary Promotional Thermostat Start */
+    .secondary-promotional-thermostat-image {
+        display: flex;
+    }
+
+    /* Secondary Promotional Thermostat End */
+
+    /* Main End */
+
+    /* Footer Start */
+
+    .group-1,
+    .group-2,
+    .group-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* Footer End */
+
+    /* Homepage End */
+}
+
+/* Mobile Grid End */
+
+/* Tablet Grid Start */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Homepage Grid Start */
+
+    .header,
+    .main > *,
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 15px;
+    }
+
+    /* Header Start */
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        grid-column: 1 / span 8;
+    }
+
+    .two-items-left {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .three-items-right {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .menu-button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .login a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .search-container,
+    .search-button,
+    .notification,
+    .notifications-button,
+    .cart,
+    .cart-button {
+        display: flex;
+    }
+
+    .notification-items,
+    .cart-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Header End */
+
+    /* Main Start */
+
+    /* Hero Start */
+
+    .hero picture {
+        display: flex;
+        grid-column: 1 / span 8;
+    }
+
+    /* Hero End */
+
+    /* Product Info Start */
+
+    .product-info {
+        grid-template-columns: 1fr;
+    }
+
+    .product-samples {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    /* Product Info End */
+
+    /* Features Start */
+
+    .features-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column: 1 / span 8;
+        align-items: center;
+        justify-items: center;
+        gap: 40px 30px;
+    }
+
+    .features-container h3 {
+        grid-column: 1 / span 2;
+    }
+
+    .smart-connectivity-feature,
+    .eco-mode-feature,
+    .temperature-sensor-feature,
+    .mobile-app-control-feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .smart-connectivity-feature {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .eco-mode-feature {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .temperature-sensor-feature {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .mobile-app-control-feature {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .features-container .feature-divider:nth-of-type(1) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .features-container .feature-divider:nth-of-type(2) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .features-container .feature-divider:nth-of-type(3) {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+    }
+
+    /* Features End */
+
+    /* Categories Start */
+
+    .categories-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column: 1 / span 8;
+        gap: 10px 18px;
+    }
+
+    .category-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .category-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Categories End */
+
+    /* Featured Product Start */
+
+    .featured-product-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column: 2 / span 6;
+        gap: 10px 18px;
+    }
+
+    .featured-product-header,
+    .featured-product-subtext {
+        grid-column: 1;
+    }
+
+    .featured-product-image {
+        grid-column: 1;
+        grid-row: 3 / span 4;
+    }
+
+    .featured-product-name,
+    .product-price,
+    .colour-options,
+    .buy-now-cta.add-to-cart-cta {
+        grid-column: 2;
+    }
+
+    .featured-product-name {
+        grid-row: 3;
+    }
+
+    .product-price {
+        grid-row: 4;
+    }
+
+    .colour-options {
+        display: flex;
+        gap: 20px;
+        grid-row: 5;
+    }
+
+    .buy-now-cta.add-to-cart-cta {
+        display: flex;
+        justify-content: space-between;
+        grid-row: 6;
+    }
+
+    /* Featured Product End */
+
+    /* Reviews Start */
+
+    .review-container {
+        display: flex;
+        flex-direction: column;
+        grid-column: 3 / span 4;
+        gap: 10px;
+    }
+
+    /* Reviews End */
+
+    /* Secondary Promotional Thermostat Start */
+
+    .secondary-promotional-thermostat-image {
+        display: flex;
+        grid-column: 3 / span 4;
+    }
+
+    /* Secondary Promotional Thermostat End */
+
+    /* Main End */
+
+    /* Footer Start */
+
+    .footer-links,
+    .links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column: 1 / span 8;
+    }
+
+    .group-1,
+    .group-2,
+    .group-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .copyright {
+        grid-column: 1 / span 3;
+    }
+
+    /* Footer End */
+
+    /* Homepage Grid End */
+}
+
+/* Tablet Grid End */
+
+/* Desktop Grid Start */
+
+@media screen and (min-width: 1024px) {
+    /* Homepage Grid Start */
+
+    .header,
+    .main > *,
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 16px;
+    }
+
+    /* Header Start */
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        grid-column: 1 / span 12;
+    }
+
+    .two-items-left {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .three-items-right {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .menu-button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .login a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .search-container,
+    .search-button,
+    .notification,
+    .notifications-button,
+    .cart,
+    .cart-button {
+        display: flex;
+    }
+
+    .notification-items,
+    .cart-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Header End */
+
+    /* Main Start */
+
+    /* Hero Start */
+
+    .hero picture {
+        display: flex;
+        grid-column: 1 / span 12;
+    }
+
+    /* Hero End */
+
+    /* Product Info Start */
+
+    .product-info {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .product-samples {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    /* Product Info End */
+
+    /* Features Start */
+
+    .features-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column: 1 / span 12;
+        align-items: center;
+        justify-items: center;
+        gap: 40px 0;
+    }
+
+    .features-container h3 {
+        grid-column: 1 / span 4;
+    }
+
+    .smart-connectivity-feature,
+    .eco-mode-feature,
+    .temperature-sensor-feature,
+    .mobile-app-control-feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .smart-connectivity-feature {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .eco-mode-feature {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .temperature-sensor-feature {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .mobile-app-control-feature {
+        grid-column: 4;
+        grid-row: 2;
+    }
+
+    .features-container .feature-divider:nth-of-type(1) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .features-container .feature-divider:nth-of-type(2) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .features-container .feature-divider:nth-of-type(3) {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    /* Features End */
+
+    /* Categories Start */
+
+    .categories-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column: 2 / span 10;
+        gap: 10px 24px;
+    }
+
+    .category-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .category-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Categories End */
+
+    /* Featured Product Start */
+
+    .featured-product-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column: 3 / span 8;
+        gap: 10px 24px;
+    }
+
+    .featured-product-header,
+    .featured-product-subtext {
+        grid-column: 1;
+    }
+
+    .featured-product-image {
+        grid-column: 1;
+        grid-row: 3 / span 4;
+    }
+
+    .featured-product-name,
+    .product-price,
+    .colour-options,
+    .buy-now-cta.add-to-cart-cta {
+        grid-column: 2;
+    }
+
+    .featured-product-name {
+        grid-row: 3;
+    }
+
+    .product-price {
+        grid-row: 4;
+    }
+
+    .colour-options {
+        display: flex;
+        gap: 25px;
+        grid-row: 5;
+    }
+
+    .buy-now-cta.add-to-cart-cta {
+        display: flex;
+        justify-content: space-between;
+        grid-row: 6;
+    }
+
+    /* Featured Product End */
+
+    /* Reviews Start */
+
+    .review-container {
+        display: flex;
+        flex-direction: column;
+        grid-column: 5 / span 4;
+        gap: 10px;
+    }
+
+    /* Reviews End */
+
+    /* Secondary Promotional Thermostat Start */
+
+    .secondary-promotional-thermostat-image {
+        display: flex;
+        grid-column: 4 / span 6;
+    }
+
+    /* Main End */
+
+    /* Footer Start */
+
+    .footer-links,
+    .links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column: 1 / span 12;
+    }
+
+    .group-1,
+    .group-2,
+    .group-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .copyright {
+        grid-column: 1 / span 3;
+    }
+
+    /* Footer End */
+
+    /* Homepage Grid End */
+}
+
+/* Desktop Grid End */

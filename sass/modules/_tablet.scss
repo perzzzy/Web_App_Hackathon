@@ -1,0 +1,552 @@
+/* Tablet Styles Start */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Homepage Styles */
+
+    /* Header Styles */
+    .header {
+        background-color: $primary-color;
+        padding: 12px 20px;
+    }
+
+    .menu-button {
+        background-color: transparent;
+        border: none;
+        width: 28px;
+        height: 22px;
+        z-index: 1000;
+        transition: transform 0.3s ease;
+    }
+
+    .menu-button span {
+        width: 100%;
+        height: 3px;
+        background-color: $background-color;
+        border-radius: 2px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-button span:first-child {
+        margin-bottom: 5px;
+    }
+
+    .menu-button span:last-child {
+        margin-top: 5px;
+    }
+
+    .menu.open span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu.open span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .main-navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 65%;
+        max-width: 400px;
+        background-color: $primary-color;
+        z-index: 999;
+        overflow-y: auto;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .main-navigation.open {
+        transform: translateX(0);
+    }
+
+    .menu-links {
+        padding: 80px 20px;
+    }
+
+    ul li {
+        padding: 14px 0;
+        border-bottom: 1px solid $secondary-color;
+        transition: border-color 0.3s ease;
+    }
+
+    ul li a {
+        color: $secondary-text-color;
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 7px 0;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        transition: color 0.3s;
+    }
+
+    ul li a:hover {
+        color: $accent-color;
+    }
+
+    .profile-avatar {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo img {
+        max-width: 136px;
+        width: 100%;
+        height: auto;
+    }
+
+    .search-wrapper {
+        display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 8px;
+        background: $light-background-color;
+        transition: opacity 0.3s ease, height 0.3s ease;
+        border: 1px solid $secondary-color;
+    }
+
+    .search-wrapper input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid $secondary-color;
+        border-radius: 4px;
+        font-size: 16px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .search-container.active .search-wrapper {
+        display: block;
+    }
+
+    button {
+        background: transparent;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .search-container img,
+    .notifications-button img,
+    .cart-button img {
+        width: 100%;
+        height: auto;
+    }
+
+    .notification-items,
+    .cart-items {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        background-color: $accent-color;
+        color: $secondary-text-color;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+
+    /* Header End */
+
+    /* Main Start */
+
+    /* Hero Start */
+    .hero {
+        padding: 24px;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Hero End */
+
+    /* Product Info Start */
+    .product-info {
+        margin-bottom: 70px;
+    }
+
+    .product-desc {
+        margin: 0 30px;
+    }
+
+    .product-desc p {
+        line-height: 20px;
+        letter-spacing: 0.25px;
+    }
+
+    .product-samples {
+        margin: 0 30px;
+    }
+
+    .product-samples img {
+        width: 31%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    /* Product Info End */
+
+    /* Features Start */
+
+    .features {
+        margin-bottom: 70px;
+    }
+
+    .features-container {
+        padding: 0 60px;
+    }
+
+    .features-container h3 {
+        font-size: 30px;
+        line-height: normal;
+        color: $primary-color;
+    }
+
+    .smart-connectivity-feature,
+    .eco-mode-feature,
+    .temperature-sensor-feature,
+    .mobile-app-control-feature {
+        margin: 0 0 22.5px;
+    }
+
+    .temperature-sensor-feature,
+    .mobile-app-control-feature {
+        margin-top: 22.5px;
+    }
+
+    .smart-connectivity-feature img,
+    .eco-mode-feature img,
+    .temperature-sensor-feature img,
+    .mobile-app-control-feature img {
+        width: 24%;
+        height: auto;
+        margin-bottom: 2px;
+    }
+
+    .smart-connectivity-feature h4,
+    .eco-mode-feature h4,
+    .temperature-sensor-feature h4,
+    .mobile-app-control-feature h4 {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: $secondary-color;
+    }
+
+    .smart-connectivity-feature p,
+    .eco-mode-feature p,
+    .temperature-sensor-feature p,
+    .mobile-app-control-feature p {
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        text-align: center;
+        color: $text-color;
+    }
+
+    .feature-divider {
+        width: 100%;
+        height: 1px;
+        background-color: $secondary-color;
+        position: relative;
+    }
+
+    .features-container .feature-divider:nth-of-type(1) {
+        top: 111px;
+    }
+
+    .features-container .feature-divider:nth-of-type(2) {
+        top: 111px;
+    }
+
+    .features-container .feature-divider:nth-of-type(3) {
+        bottom: 17px;
+    }
+
+    /* Features End */
+
+    /* Categories Start */
+
+    .thermostat-categories {
+        margin-bottom: 40px;
+    }
+
+    .categories-container {
+        padding: 12px;
+        margin: 0 24px;
+        background-color: $light-background-color;
+        border-radius: 8px;
+    }
+
+    .category-button {
+        padding: 10px 8px;
+        background-color: $light-background-color;
+        border: 1px solid $secondary-color;
+        border-radius: 8px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .category-heading {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+    }
+
+    .category-button:hover,
+    .category-button:focus {
+        background-color: $accent-color;
+        color: $text-color;
+    }
+
+    .category-button img {
+        width: 11%;
+        height: auto;
+        transition: transform 0.3s;
+    }
+
+    .category-button[aria-expanded="true"] img {
+        transform: rotate(180deg);
+    }
+
+    .category-links {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .category-links ul {
+        padding: 0 12px;
+        background-color: $background-color;
+    }
+
+    .category-links a {
+        font-size: 14px;
+        color: $text-color;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+    }
+
+    .category-links a:hover {
+        text-decoration: underline;
+        color: $accent-color;
+    }
+
+    .category-button[aria-expanded="true"] + .category-links {
+        max-height: 200px;
+    }
+
+    /* Categories End */
+
+    /* Featured Product Start */
+
+    .featured-product {
+        margin-bottom: 70px;
+    }
+
+    .featured-product-card {
+        background-color: $light-background-color;
+        border: 1px solid $secondary-color;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 18px;
+    }
+
+    .featured-product-header {
+        margin: 0 0 5px;
+    }
+
+    .featured-product-header h3 {
+        font-size: 30px;
+        line-height: normal;
+    }
+
+    .featured-product-subtext {
+        margin: 0 18px 10px 0;
+    }
+
+    .featured-product-subtext p {
+        line-height: 20px;
+        letter-spacing: 0.25px;
+    }
+
+    #product-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .featured-product-name h4 {
+        font-size: 24px;
+        line-height: 28px;
+        color: $text-color;
+    }
+
+    .product-price p {
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        color: $text-color;
+    }
+
+    .colour-options {
+        margin: 0 0 10px 0;
+    }
+
+    .black,
+    .red,
+    .white {
+        width: 45px;
+        height: 45px;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    .black:hover,
+    .red:hover,
+    .white:hover {
+        transform: scale(1.05);
+    }
+
+    .black {
+        background-color: black;
+        border: 2px dashed white;
+    }
+
+    .red {
+        background-color: red;
+        border: 2px dashed white;
+    }
+
+    .white {
+        background-color: white;
+        border: 2px dashed black;
+    }
+
+    .buy-now-cta.add-to-cart-cta {
+        color: $secondary-color;
+    }
+
+    .buy-now-cta.add-to-cart-cta a {
+        padding: 10px 20px;
+        background-color: $secondary-color;
+        color: $secondary-text-color;
+        text-decoration: none;
+        border-radius: 8px;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        transition: background-color 0.3s;
+    }
+
+    .buy-now-cta.add-to-cart-cta a:hover {
+        background-color: darken($secondary-color, 10%);
+        transform: scale(1.05);
+    }
+
+    /* Featured Product End */
+
+    /* Reviews Start */
+
+    .reviews {
+        margin-bottom: 40px;
+    }
+
+    .review-container {
+        margin: 0 24px;
+        text-align: center;
+    }
+
+    .review-header {
+        margin-bottom: 5px;
+    }
+
+    .review-header h3 {
+        font-size: 28px;
+        line-height: normal;
+        color: $text-color;
+    }
+
+    .review-container .review-divider {
+        display: block;
+        width: 76px;
+        height: 1px;
+        background-color: $secondary-color;
+        margin: 0 auto;
+    }
+
+    .customer-rating.customer-testimonial.customer-name {
+        margin-top: 10px;
+    }
+
+    .rating {
+        font-size: 24px;
+        color: #ffcc00;
+        margin-bottom: 10px;
+    }
+
+    .testimonial {
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        color: $text-color;
+        margin-bottom: 20px;
+        font-style: italic;
+    }
+
+    .name {
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        color: $text-color;
+    }
+
+    /* Reviews End */
+
+    /* Secondary Promotional Thermostat Start */
+    .secondary-promotional-thermostat {
+        margin: 0 0 30px;
+    }
+
+    .secondary-promotional-thermostat-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Secondary Promotional Thermostat End */
+
+    /* Footer Start */
+    .footer-links {
+        background-color: $primary-color;
+        padding: 25px 0 10px;
+    }
+
+    .links ul li {
+        border: 0;
+        padding: 0;
+    }
+
+    .links ul li a {
+        text-align: center;
+        padding: 0;
+    }
+
+    .copyright {
+        margin-top: 30px;
+    }
+
+    .copyright-text {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        text-align: center;
+        color: $secondary-text-color;
+    }
+
+    /* Footer End */
+}
+
+/* Tablet End */
