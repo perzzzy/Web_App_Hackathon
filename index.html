@@ -18,57 +18,62 @@
         <header class="header">
             <h1 class="visually-hidden">THERMOSECURITY by HOUSCOM</h1>
             <div class="nav-bar">
-                <div class="menu">
-                    <button class="menu-button" type="button" aria-label="Open Menu" aria-expanded="false">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <nav class="main-navigation" aria-label="Main Navigation">
-                        <h2 class="visually-hidden">Main Navigation</h2>
-                        <ul class="menu-links">
-                            <li class="login">
-                                <a href="#login">
-                                    <p class="profile-text">Login</p>
-                                    <img src="assets/images/profilepic.png" alt="Profile Avatar" class="profile-avatar">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="#features">Features</a>
-                            </li>
-                            <li>
-                                <a href="#reviews">Reviews</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="assets/images/main_logo_white.png" alt="THERMOSECURITY by HOUSCOM logo">
-                    </a>
-                </div>
-                <div class="search-container">
-                    <button class="search-button" type="button" aria-label="Search">
-                        <img src="assets/images/search.svg" alt="Search icon">
-                    </button>
-                    <div class="search-wrapper">
-                        <input type="search" name="search" id="search" aria-label="Search" placeholder="Search...">
+                <div class="two-items-left">
+                    <div class="menu">
+                        <button class="menu-button" type="button" aria-label="Open Menu" aria-expanded="false">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <nav class="main-navigation" aria-label="Main Navigation">
+                            <h2 class="visually-hidden">Main Navigation</h2>
+                            <ul class="menu-links">
+                                <li class="login">
+                                    <a href="#login">
+                                        <p class="profile-text">Login</p>
+                                        <img src="assets/images/profilepic.png" alt="Profile Avatar"
+                                            class="profile-avatar">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#features">Features</a>
+                                </li>
+                                <li>
+                                    <a href="#reviews">Reviews</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/images/main_logo_white.png" alt="THERMOSECURITY by HOUSCOM logo">
+                        </a>
                     </div>
                 </div>
-                <div class="notifications">
-                    <button class="notifications-button" aria-label="View Notifications">
-                        <img src="assets/images/notifications.svg" alt="Notification icon">
-                        <span class="notification-items">0</span>
-                    </button>
-                </div>
-                <div class="cart">
-                    <button class="cart-button" aria-label="View Cart">
-                        <img src="assets/images/shopping_bag_icon.svg" alt="Shopping bag icon">
-                        <span class="cart-items">0</span>
-                    </button>
+                <div class="three-items-right">
+                    <div class="search-container">
+                        <button class="search-button" type="button" aria-label="Search">
+                            <img src="assets/images/search_icon.svg" alt="Search icon">
+                        </button>
+                        <div class="search-wrapper">
+                            <input type="search" name="search" id="search" aria-label="Search" placeholder="Search...">
+                        </div>
+                    </div>
+                    <div class="notifications">
+                        <button class="notifications-button" aria-label="View Notifications">
+                            <img src="assets/images/notifications_icon.svg" alt="Notification icon">
+                            <span class="notification-items">0</span>
+                        </button>
+                    </div>
+                    <div class="cart">
+                        <button class="cart-button" aria-label="View Cart">
+                            <img src="assets/images/shopping_bag_icon.svg" alt="Shopping bag icon">
+                            <span class="cart-items" id="cartitemcount">0</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </header>
@@ -130,11 +135,12 @@
                 <h2 class="visually-hidden">Product Categories</h2>
                 <div class="categories-container">
                     <div class="category-item">
-                        <button class="category-button" type="button" aria-expanded="false">
+                        <button class="category-button" type="button" aria-expanded="false"
+                            aria-controls="smart-thermostats-links">
                             <span class="category-heading">Smart Thermostats</span>
                             <img src="assets/images/down_arrow.svg" alt="Arrow down icon">
                         </button>
-                        <div class="category-links" aria-hidden="true">
+                        <div class="category-links" id="smart-thermostats-links">
                             <ul>
                                 <li>
                                     <a href="#">Basic Models</a>
@@ -149,11 +155,12 @@
                         </div>
                     </div>
                     <div class="category-item">
-                        <button class="category-button" type="button" aria-expanded="false">
+                        <button class="category-button" type="button" aria-expanded="false"
+                            aria-controls="smart-home-integration-links">
                             <span class="category-heading">Smart Home Integration</span>
                             <img src="assets/images/down_arrow.svg" alt="Arrow down icon">
                         </button>
-                        <div class="category-links" aria-hidden="true">
+                        <div class="category-links" id="smart-home-integration-links">
                             <ul>
                                 <li>
                                     <a href="#">Compatibility</a>
@@ -165,11 +172,12 @@
                         </div>
                     </div>
                     <div class="category-item">
-                        <button class="category-button" type="button" aria-expanded="false">
+                        <button class="category-button" type="button" aria-expanded="false"
+                            aria-controls="accessories-links">
                             <span class="category-heading">Accessories</span>
                             <img src="assets/images/down_arrow.svg" alt="Arrow down icon">
                         </button>
-                        <div class="category-links" aria-hidden="true">
+                        <div class="category-links" id="accessories-links">
                             <ul>
                                 <li>
                                     <a href="#">Temperature Sensors</a>
@@ -184,11 +192,12 @@
                         </div>
                     </div>
                     <div class="category-item">
-                        <button class="category-button" type="button" aria-expanded="false">
+                        <button class="category-button" type="button" aria-expanded="false"
+                            aria-controls="mobile-app-links">
                             <span class="category-heading">Mobile App Solutions</span>
                             <img src="assets/images/down_arrow.svg" alt="Arrow down icon">
                         </button>
-                        <div class="category-links" aria-hidden="true">
+                        <div class="category-links" id="mobile-app-links">
                             <ul>
                                 <li>
                                     <a href="#">Mobile App Control</a>
@@ -200,11 +209,12 @@
                         </div>
                     </div>
                     <div class="category-item">
-                        <button class="category-button" type="button" aria-expanded="false">
+                        <button class="category-button" type="button" aria-expanded="false"
+                            aria-controls="bundles-links">
                             <span class="category-heading">Bundles & Packages</span>
                             <img src="assets/images/down_arrow.svg" alt="Arrow down icon">
                         </button>
-                        <div class="category-links" aria-hidden="true">
+                        <div class="category-links" id="bundles-links">
                             <ul>
                                 <li>
                                     <a href="#">Starter Kits</a>
@@ -216,11 +226,12 @@
                         </div>
                     </div>
                     <div class="category-item">
-                        <button class="category-button" type="button" aria-expanded="false">
+                        <button class="category-button" type="button" aria-expanded="false"
+                            aria-controls="seasonal-offers-links">
                             <span class="category-heading">Seasonal Offers</span>
                             <img src="assets/images/down_arrow.svg" alt="Arrow down icon">
                         </button>
-                        <div class="category-links" aria-hidden="true">
+                        <div class="category-links" id="seasonal-offers-links">
                             <ul>
                                 <li>
                                     <a href="#">Summer Specials</a>
@@ -232,11 +243,12 @@
                         </div>
                     </div>
                     <div class="category-item">
-                        <button class="category-button" type="button" aria-expanded="false">
+                        <button class="category-button" type="button" aria-expanded="false"
+                            aria-controls="replacement-parts-links">
                             <span class="category-heading">Replacement Parts</span>
                             <img src="assets/images/down_arrow.svg" alt="Arrow down icon">
                         </button>
-                        <div class="category-links" aria-hidden="true">
+                        <div class="category-links" id="replacement-parts-links">
                             <ul>
                                 <li>
                                     <a href="#">Batteries</a>
@@ -248,11 +260,12 @@
                         </div>
                     </div>
                     <div class="category-item">
-                        <button class="category-button" type="button" aria-expanded="false">
+                        <button class="category-button" type="button" aria-expanded="false"
+                            aria-controls="commercial-solutions-links">
                             <span class="category-heading">Commercial Solutions</span>
                             <img src="assets/images/down_arrow.svg" alt="Arrow down icon">
                         </button>
-                        <div class="category-links" aria-hidden="true">
+                        <div class="category-links" id="commercial-solutions-links">
                             <ul>
                                 <li>
                                     <a href="#">Office Thermostats</a>
@@ -264,11 +277,12 @@
                         </div>
                     </div>
                     <div class="category-item">
-                        <button class="category-button" type="button" aria-expanded="false">
+                        <button class="category-button" type="button" aria-expanded="false"
+                            aria-controls="custom-solutions-links">
                             <span class="category-heading">Custom Solutions</span>
                             <img src="assets/images/down_arrow.svg" alt="Arrow down icon">
                         </button>
-                        <div class="category-links" aria-hidden="true">
+                        <div class="category-links" id="custom-solutions-links">
                             <ul>
                                 <li>
                                     <a href="#">Tailored Systems</a>
@@ -307,7 +321,7 @@
                     </div>
                     <div class="buy-now-cta add-to-cart-cta">
                         <a href="#">Buy Now</a>
-                        <a href="#">Add to Cart</a>
+                        <a href="#" id="addtocartbutton">Add to Cart</a>
                     </div>
                 </div>
             </section>
@@ -365,13 +379,16 @@
                     </ul>
                     <ul class="group-3">
                         <li>
-                            <a href="https://www.instagram.com/" aria-label="Follow us on Instagram">Instagram</a>
+                            <a href="https://www.instagram.com/" aria-label="Follow us on Instagram" target="_blank"
+                                rel="noopener noreferrer">Instagram</a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/" aria-label="Subscribe on YouTube">YouTube</a>
+                            <a href="https://www.youtube.com/" aria-label="Subscribe to our YouTube channel"
+                                target="_blank" rel="noopener noreferrer">YouTube</a>
                         </li>
                         <li>
-                            <a href="https://x.com/" aria-label="Follow us on X">X</a>
+                            <a href="https://x.com/" aria-label="Follow us on X" target="_blank"
+                                rel="noopener noreferrer">X</a>
                         </li>
                     </ul>
                 </div>

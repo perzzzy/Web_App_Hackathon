@@ -36,9 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // Check if the category is currently expanded
             const expanded = button.getAttribute('aria-expanded') === 'true';
             // Update the aria attribute and toggle the visibility of the links
-            button.setAttribute('aria-expanded', !expanded);
+            button.setAttribute('aria-expanded', !expanded); // Update ARIA attribute
             const links = button.nextElementSibling;
-            links.setAttribute('aria-hidden', expanded);
+            links.setAttribute('aria-hidden', expanded); // Update ARIA attribute
         });
     });
 
@@ -71,4 +71,19 @@ document.addEventListener('DOMContentLoaded', () => {
             // Log any errors that occur during the fetch
             console.error('There was a problem with the fetch operation:', error);
         });
+
+    // Set up Add to Cart functionality
+    const addToCartButton = document.getElementById('addtocartbutton');
+    const cartItemCount = document.getElementById('cartitemcount');
+
+    // Initialize item count
+    let itemCount = 0;
+
+    if (addToCartButton && cartItemCount) {
+        addToCartButton.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            itemCount++; // Increment item count
+            cartItemCount.textContent = itemCount; // Update the displayed count
+        });
+    }
 });
