@@ -507,7 +507,7 @@
 
     .features-container {
         grid-template-columns: repeat(4, 1fr);
-    }
+        }
 
     .features-container h3 {
         grid-column: 1 / span 4;
@@ -522,6 +522,18 @@
         grid-column: 4;
         grid-row: 2;
     }
+}
+
+@media screen and (min-width: 1920px) {
+     /* Homepage Grid Start */
+
+    /* Main Start */
+
+     /* Categories Start */
+
+     .categories-container {
+        grid-column: 2 / span 5;
+     }
 }
 
 /* Desktop Grid End */
