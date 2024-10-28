@@ -21,35 +21,36 @@
                 <div class="two-items-left">
                     <div class="menu">
                         <button class="menu-button" type="button" aria-label="Open Menu" aria-expanded="false">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
                         </button>
                         <nav class="main-navigation" aria-label="Main Navigation">
                             <h2 class="visually-hidden">Main Navigation</h2>
                             <ul class="menu-links">
-                                <li class="login">
-                                    <a href="#login">
-                                        <p class="profile-text">Login</p>
-                                        <img src="assets/images/profilepic.png" alt="Profile Avatar"
-                                            class="profile-avatar">
-                                    </a>
+                                <li class="border-top">
+                                    <a id="home" href="index.html">Home</a>
                                 </li>
-                                <li>
-                                    <a href="index.html">Home</a>
-                                </li>
-                                <li>
+                                <li class="border-top-2">
                                     <a href="#features">Features</a>
                                 </li>
-                                <li>
+                                <li class="border-top-2">
                                     <a href="#reviews">Reviews</a>
+                                </li>
+                                <li class="login-button">
+                                    <button type="button" class="profile-button">
+                                        <span class="profile-text">Login</span>
+                                        <img src="assets/images/profilepic.png" alt="Profile Avatar"
+                                            class="profile-avatar">
+                                    </button>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                     <div class="logo">
                         <a href="index.html">
-                            <img src="assets/images/main_logo_white.png" alt="THERMOSECURITY by HOUSCOM logo">
+                            <img src="assets/images/main_logo_white.png" alt="THERMOSECURITY by HOUSCOM logo"
+                                class="logo">
                         </a>
                     </div>
                 </div>
@@ -81,7 +82,7 @@
             <section class="hero">
                 <h2 class="visually-hidden">Hero Images Section</h2>
                 <picture>
-                    <source srcset="assets/images/hero_image_desktop.jpg" media="(min-width: 700px)">
+                    <source srcset="assets/images/hero_image_desktop.jpg" media="(min-width: 480px)">
                     <img src="assets/images/hero_image_mobile.jpg"
                         alt="Hero background image featuring featured text and product samples">
                 </picture>
@@ -111,23 +112,20 @@
                         <h4>Smart Connectivity</h4>
                         <p>Seamless integration with smart home systems and automation platforms.</p>
                     </div>
-                    <hr class="feature-divider">
                     <div class="eco-mode-feature">
                         <img src="assets/images/eco_mode_icon.svg" alt="Eco Mode icon">
                         <h4>Smart Away Mode</h4>
                         <p>Detects when you are away from home and adjusts settings to save energy.</p>
                     </div>
-                    <hr class="feature-divider">
                     <div class="temperature-sensor-feature">
                         <img src="assets/images/temperature_sensor_icon.svg" alt="Temperature Sensor icon">
                         <h4>Temperature Sensors</h4>
                         <p>Monitor different areas of the home for more accurate temperature control.</p>
                     </div>
-                    <hr class="feature-divider">
                     <div class="mobile-app-control-feature">
                         <img src="assets/images/mobile_app_control_icon.svg" alt="Mobile App Control icon">
                         <h4>Mobile App Control</h4>
-                        <p>Offers full control and customization via a smartphone app.</p>
+                        <p>Offers full control and customization via the THERMOSECURITY by HOUSCOM app.</p>
                     </div>
                 </div>
             </section>
@@ -332,12 +330,12 @@
                         <h3>Reviews</h3>
                     </div>
                     <hr class="review-divider">
-                    <div class="customer-rating customer-testimonial customer-name">
-                        <p class="rating">*****</p>
+                    <article class="customer-rating customer-testimonial customer-name">
+                        <h4 class="rating">*****</h4>
                         <p class="testimonial"> I have been using the thermostat for a few months now and I am extremely
                             satisfied with its performance. </p>
                         <p class="name">Sam Mathews</p>
-                    </div>
+                    </article>
                 </div>
             </section>
             <section class="secondary-promotional-thermostat">

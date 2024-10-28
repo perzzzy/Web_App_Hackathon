@@ -1,49 +1,41 @@
 /* Mobile Styles Start */
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) {
     /* Homepage Styles */
 
     /* Header Styles */
 
     .header {
         background-color: $primary-color;
-        padding: 12px 10px;
+        padding: 10px 15px;
     }
 
     .menu-button {
         background-color: transparent;
         border: none;
         width: 24px;
-        height: 19px;
+        height: 20px;
         z-index: 1000;
         transition: transform 0.3s ease;
     }
 
-    .menu-button span {
+    .line {
         width: 100%;
-        height: 3px;
+        height: 4px;
         background-color: $background-color;
         border-radius: 2px;
         transition: all 0.3s ease-in-out;
     }
 
-    .menu-button span:first-child {
-        margin-bottom: 5px;
-    }
-
-    .menu-button span:last-child {
-        margin-top: 5px;
-    }
-
-    .menu.open span:nth-child(1) {
+    .menu.open .line:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
 
-    .menu.open span:nth-child(2) {
+    .menu.open .line:nth-child(2) {
         opacity: 0;
     }
 
-    .menu.open span:nth-child(3) {
+    .menu.open .line:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 
@@ -70,11 +62,11 @@
     }
 
     .menu-links {
-        padding: 60px 20px;
+        margin: 50px 15px;
     }
 
     ul li {
-        padding: 12px 0;
+        padding: 10px 0;
         border-bottom: 1px solid $secondary-color;
         transition: border-color 0.3s ease;
     }
@@ -84,7 +76,7 @@
         display: block;
         text-decoration: none;
         text-transform: uppercase;
-        padding: 6px 0;
+        margin: 5px 0;
         line-height: 20px;
         letter-spacing: 0.25px;
         transition: color 0.3s;
@@ -94,18 +86,39 @@
         color: $accent-color;
     }
 
-    .login {
-        padding: 10px;
+    .login-button {
+        padding: 12px 16px;
+        margin-top: 20px;
+        background-color: $secondary-color;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        width: 100%;
+        max-width: 124px;
+        float: right;
+        transition: transform .3s ease;
+    }
+
+    .login-button:hover {
+        background-color: $accent-color;
+    }
+
+    .login span {
+        transform: none;
+    }
+
+    .profile-text {
+        font-size: 16px;
+        color: $secondary-text-color;
     }
 
     .profile-avatar {
-        width: 100%;
+        width: 44%;
         height: auto;
     }
 
-    .logo img {
-        max-width: 128px;
-        width: 100%;
+    .logo {
+        width: 128px;
         height: auto;
     }
 
@@ -127,10 +140,11 @@
 
     .search-wrapper input {
         width: 100%;
-        padding: 10px;
+        padding: 8px;
         border: 1px solid $secondary-color;
         border-radius: 4px;
         font-size: 16px;
+        letter-spacing: 0.5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
@@ -168,10 +182,14 @@
 
     /* Main Start */
 
+    .main {
+        margin: 15px;
+    }
+
     /* Hero Start */
 
     .hero {
-        padding: 12px;
+        margin-bottom: 15px;
     }
 
     .hero img {
@@ -185,11 +203,11 @@
     /* Product Info Start */
 
     .product-info {
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 
     .product-desc {
-        margin: 0 16px;
+        margin: 0;
     }
 
     .product-desc p {
@@ -199,13 +217,14 @@
     }
 
     .product-samples {
-        padding: 0 20px;
+        margin: 0 5px;
     }
 
     .product-samples img {
-        width: 28.572%;
+        width: 100%;
         height: auto;
         border-radius: 8px;
+        transition: transform .3s ease;
     }
 
     /* Product Info End */
@@ -213,26 +232,24 @@
     /* Features Start */
 
     .features {
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 
     .features-container {
-        padding: 0 12px;
+        margin: 0;
     }
 
     .features-container h3 {
         font-size: 26px;
-        line-height: 24px;
-        letter-spacing: 0.15px;
+        line-height: 28px;
         color: $primary-color;
-        margin-bottom: 10px;
     }
 
     .smart-connectivity-feature,
     .eco-mode-feature,
     .temperature-sensor-feature,
     .mobile-app-control-feature {
-        margin: 0 24px;
+        margin: 0 6px;
     }
 
     .smart-connectivity-feature img,
@@ -241,16 +258,14 @@
     .mobile-app-control-feature img {
         width: 22%;
         height: auto;
-        margin-bottom: 2px;
     }
 
     .smart-connectivity-feature h4,
     .eco-mode-feature h4,
     .temperature-sensor-feature h4,
     .mobile-app-control-feature h4 {
-        font-size: 22px;
-        line-height: 24px;
-        letter-spacing: 0.25px;
+        font-size: 20px;
+        line-height: 28px;
         text-align: center;
         color: $secondary-color;
     }
@@ -265,11 +280,6 @@
         text-align: center;
     }
 
-    .feature-divider {
-        width: 100%;
-        height: 1px;
-        background-color: $secondary-color;
-    }
 
     /* Features End */
 
@@ -281,13 +291,12 @@
 
     .categories-container {
         padding: 12px;
-        margin: 0 12px;
         background-color: $light-background-color;
         border-radius: 8px;
     }
 
     .category-button {
-        padding: 10px 8px;
+        padding: 10px;
         background-color: $light-background-color;
         border: 1px solid $secondary-color;
         border-radius: 8px;
@@ -296,7 +305,6 @@
 
     .category-heading {
         font-size: 16px;
-        line-height: 20px;
         letter-spacing: 0.25px;
     }
 
@@ -323,15 +331,13 @@
     }
 
     .category-links ul {
-        padding: 0 10px;
+        padding: 0 12px;
         background-color: $background-color;
     }
 
     .category-links a {
         color: $text-color;
         font-size: 14px;
-        line-height: 20px;
-        letter-spacing: 0.25px;
     }
 
     .category-links a:hover {
@@ -348,7 +354,7 @@
     /* Featured Product Start */
 
     .featured-product {
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 
     .featured-product-card {
@@ -356,8 +362,7 @@
         border: 1px solid $secondary-color;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin: 0 12px;
-        padding: 12px;
+        padding: 10px;
     }
 
     .featured-product-header {
@@ -366,12 +371,11 @@
 
     .featured-product-header h3 {
         font-size: 26px;
-        line-height: normal;
-        letter-spacing: 0.25px;
+        line-height: 30px;
     }
 
     .featured-product-subtext {
-        margin-bottom: 10px;
+        margin: 0 62px 5px 0;
     }
 
     .featured-product-subtext p {
@@ -387,13 +391,12 @@
     }
 
     .featured-product-name {
-        margin-bottom: 5px;
+        margin: 0;
     }
 
     .featured-product-name h4 {
         font-size: 20px;
-        line-height: 24px;
-        letter-spacing: 0.25px;
+        line-height: 28px;
     }
 
     .product-price {
@@ -401,6 +404,7 @@
     }
 
     .product-price p {
+        font-size: 16px;
         line-height: 20px;
         letter-spacing: 0.25px;
     }
@@ -448,6 +452,7 @@
         background-color: $secondary-color;
         color: $secondary-text-color;
         text-decoration: none;
+        text-align: center;
         border-radius: 8px;
         line-height: 20px;
         letter-spacing: 0.25px;
@@ -468,7 +473,7 @@
     }
 
     .review-container {
-        margin: 0 28px;
+        margin: 0 13px;
         text-align: center;
     }
 
@@ -478,13 +483,12 @@
 
     .review-header h3 {
         font-size: 26px;
-        line-height: 24px;
-        letter-spacing: 0.25px;
+        line-height: 28px;
     }
 
     .review-container .review-divider {
         display: block;
-        width: 25%;
+        max-width: 25%;
         height: 1px;
         background-color: $secondary-color;
         margin: 0 auto;
@@ -496,6 +500,7 @@
 
     .rating {
         font-size: 24px;
+        line-height: 28px;
         color: #ffcc00;
         margin-bottom: 10px;
     }
@@ -518,10 +523,6 @@
 
     /* Secondary Promotional Thermostat Start */
 
-    .secondary-promotional-thermostat {
-        margin: 0 12px 30px;
-    }
-
     .secondary-promotional-thermostat-image img {
         width: 100%;
         height: auto;
@@ -535,7 +536,11 @@
 
     .footer-links {
         background-color: $primary-color;
-        padding: 20px 0 10px;
+        padding: 15px 15px 10px;
+    }
+
+    .links {
+        margin: 0;
     }
 
     .links ul li {
@@ -544,8 +549,7 @@
     }
 
     .links ul li a {
-        text-align: center;
-        padding: 0;
+        margin: 0;
     }
 
     .group-2 {
@@ -558,13 +562,293 @@
 
     .copyright-text {
         font-size: 12px;
-        line-height: 20px;
-        letter-spacing: 0.25px;
+        line-height: 16px;
+        letter-spacing: 0.5px;
         text-align: center;
         color: $secondary-text-color;
     }
 
     /* Footer End */
+}
+
+@media screen and (min-width: 375px) {
+    /* Homepage Styles */
+
+    /* Header Styles */
+    .header {
+        padding: 12px 20px;
+    }
+
+    .main-navigation {
+        width: 70%;
+        max-width: 300px;
+    }
+
+    .menu-links {
+        margin: 55px 18px;
+    }
+
+    ul li {
+        padding: 12px 0;
+    }
+
+    ul li a {
+        margin: 10px 0;
+    }
+
+    .login {
+        padding: 9px;
+    }
+
+    .search-wrapper {
+        top: 65px;
+    }
+
+    .search-wrapper input {
+        padding: 9px;
+    }
+
+    /* Main Start */
+    .main {
+        margin: 20px;
+    }
+
+    /* Hero Start */
+    .hero {
+        margin-bottom: 20px;
+    }
+
+    /* Product Info Start */
+    .product-info {
+        margin-bottom: 50px;
+    }
+
+    .product-desc {
+        margin: 0 4px;
+    }
+
+    .product-desc p {
+        font-size: 15px;
+    }
+
+    /* Features Start */
+    .features {
+        margin-bottom: 50px;
+    }
+
+    .features-container {
+        margin: 0 10px;
+    }
+
+    .features-container h3 {
+        font-size: 28px;
+    }
+
+    .smart-connectivity-feature h4,
+    .eco-mode-feature h4,
+    .temperature-sensor-feature h4,
+    .mobile-app-control-feature h4 {
+        font-size: 22px;
+    }
+
+    .smart-connectivity-feature p,
+    .eco-mode-feature p,
+    .temperature-sensor-feature p,
+    .mobile-app-control-feature p {
+        font-size: 15px;
+    }
+
+    /* Categories Start */
+    .thermostat-categories {
+        margin-bottom: 35px;
+    }
+
+    /* Featured Product Start */
+    .featured-product {
+        margin-bottom: 50px;
+    }
+
+    .featured-product-card {
+        margin: 0 20px;
+    }
+
+    .featured-product-header h3 {
+        font-size: 28px;
+    }
+
+    .featured-product-subtext p {
+        font-size: 15px;
+    }
+
+    .featured-product-name h4 {
+        font-size: 22px;
+    }
+
+    /* Reviews Start */
+    .reviews {
+        margin-bottom: 35px;
+    }
+
+    .review-container {
+        margin: 0 25px;
+    }
+
+    .testimonial {
+        font-size: 15px;
+    }
+
+    .name {
+        font-size: 15px;
+    }
+
+    /* Footer Start */
+    .footer-links {
+        padding: 20px 20px 10px;
+    }
+
+    /* Footer End */
+}
+
+@media screen and (min-width: 400px) {
+    /* Homepage Styles */
+
+    /* Header Styles */
+
+    .main-navigation {
+        width: 68%;
+        max-width: 320px;
+    }
+
+    .menu-links {
+        margin: 58px 20px;
+    }
+
+    .search-wrapper {
+        top: 66px;
+    }
+
+    /* Main Start */
+
+    /* Product Info Start */
+    .product-info {
+        margin-bottom: 55px;
+    }
+
+    /* Features Start */
+    .features {
+        margin-bottom: 55px;
+    }
+
+    .features-container {
+        margin: 0 25px;
+    }
+
+    /* Categories Start */
+    .thermostat-categories {
+        margin-bottom: 38px;
+    }
+
+    /* Featured Product Start */
+    .featured-product {
+        margin-bottom: 55px;
+    }
+
+    .featured-product-card {
+        margin: 0 30px;
+    }
+
+    .featured-product-subtext {
+        margin: 0 50px 5px 0;
+    }
+
+    /* Reviews Start */
+    .reviews {
+        margin-bottom: 38px;
+    }
+
+    .review-container {
+        margin: 0 35px;
+    }
+
+    .review-header h3 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    /* Homepage Styles */
+
+    /* Header Styles */
+
+    .main-navigation {
+        width: 70%;
+        max-width: 340px;
+    }
+
+    ul li {
+        padding: 14px 0;
+    }
+
+    .search-wrapper {
+        top: 68px;
+    }
+
+    /* Main Start */
+
+    /* Features Start */
+
+    .features-container {
+        margin: 0 35px;
+    }
+
+    /* Featured Product Start */
+    .featured-product {
+        margin-bottom: 58px;
+    }
+
+    .featured-product-card {
+        margin: 0 40px;
+    }
+
+    /* Reviews Start */
+
+    .review-container {
+        margin: 0 45px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    /* Homepage Styles */
+
+    /* Header Styles */
+
+    .main-navigation {
+        width: 70%;
+        max-width: 360px;
+    }
+
+    /* Main Start */
+
+    /* Features Start */
+
+    .smart-connectivity-feature,
+    .eco-mode-feature,
+    .temperature-sensor-feature,
+    .mobile-app-control-feature {
+        margin: 0 24px;
+    }
+
+    /* Featured Product Start */
+
+    .featured-product-card {
+        margin: 0 60px;
+    }
+
+    /* Reviews Start */
+
+    .review-container {
+        margin: 0 70px;
+    }
 }
 
 /* Mobile End */
